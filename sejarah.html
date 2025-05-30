@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sejarah - Samudera Pasai</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="ensiklopedia.css">
+</head>
+<body class="bg-lightcream text-green-900 font-serif fade-in">
+
+  <nav class="bg-green-100 shadow-md p-4 sticky top-0 z-50">
+    <div class="flex justify-between items-center max-w-screen-xl mx-auto">
+      <h1 class="text-xl font-bold">Ensiklopedia Samudera Pasai</h1>
+      <button id="hamburgerBtn" class="md:hidden focus:outline-none" aria-label="Toggle Menu">
+        <svg class="w-6 h-6 text-green-900" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+      <ul class="hidden md:flex space-x-6 text-sm md:text-base font-semibold" id="navMenu">
+        <li><a href="index.html" class="hover:text-green-600">Beranda</a></li>
+        <li><a href="sejarah.html" class="hover:text-green-600">Sejarah</a></li>
+        <li><a href="galeri.html" class="hover:text-green-600">Galeri</a></li>
+        <li><a href="tentang.html" class="hover:text-green-600">Tentang</a></li>
+      </ul>
+    </div>
+    <ul class="md:hidden hidden flex-col space-y-2 mt-4 px-2 text-sm font-semibold" id="mobileMenu">
+      <li><a href="index.html" class="block py-2 px-4 hover:bg-green-200 rounded">Beranda</a></li>
+      <li><a href="sejarah.html" class="block py-2 px-4 hover:bg-green-200 rounded">Sejarah</a></li>
+      <li><a href="galeri.html" class="block py-2 px-4 hover:bg-green-200 rounded">Galeri</a></li>
+      <li><a href="tentang.html" class="block py-2 px-4 hover:bg-green-200 rounded">Tentang</a></li>
+    </ul>
+  </nav>  
+
+  <main class="p-6 max-w-5xl mx-auto">
+    <h2 class="text-3xl font-bold mb-4">Sejarah Kerajaan Samudera Pasai</h2>
+
+    <section class="mb-6 p-4 rounded-lg shadow bg-white hover:shadow-lg transition">
+      <h3 class="text-xl font-semibold mb-2">Sejarah Singkat</h3>
+      <p>Kerajaan Samudera Pasai berdiri sekitar abad ke-13 dan dikenal sebagai kerajaan Islam pertama di Nusantara. Letaknya strategis di pesisir utara Sumatera menjadikannya pusat perdagangan sekaligus penyebaran agama Islam ke berbagai daerah di Asia Tenggara.</p>
+    </section>
+
+    <section class="mb-6 p-4 rounded-lg shadow bg-white hover:shadow-lg transition">
+  <h3 class="text-xl font-semibold mb-4">Timeline Sejarah</h3>
+  <div class="timeline">
+    <div class="timeline-item">
+      <div class="timeline-date">Abad ke-13</div>
+      <div class="timeline-content">Samudera Pasai berdiri dan Sultan Malik al-Saleh naik takhta.</div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-date">Abad ke-14</div>
+      <div class="timeline-content">Menjadi pusat perdagangan dan Islamisasi di Asia Tenggara.</div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-date">Abad ke-15</div>
+      <div class="timeline-content">Dikunjungi penjelajah terkenal Ibnu Battutah.</div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-date">Abad ke-16</div>
+      <div class="timeline-content">Digabungkan ke dalam Kesultanan Aceh.</div>
+    </div>
+  </div>
+</section>
+
+    <section class="mb-6 p-4 rounded-lg shadow bg-white hover:shadow-lg transition">
+      <h3 class="text-xl font-semibold mb-4">Politik dan Pemerintahan</h3>
+      <div class="mb-4">
+        <div class="flex flex-col md:flex-row items-center gap-4">
+          <img src="assets/images/sultan-malikussaleh.jpg" alt="Sultan Malikussaleh" class="w-32 h-32 object-cover rounded shadow img-hover-scale">
+          <div>
+            <p><strong>Sultan Malikussaleh</strong> adalah pendiri Samudera Pasai dan dikenal sebagai tokoh penting dalam penyebaran Islam di Asia Tenggara. Ia memeluk Islam setelah dikenal sebagai Merah Silu. Ia mencapai puncak kejayaan, merupakan raja pertama, kerajaan berkembang menjadi bandar yang besar dan penting bagi perdagangan mancanegara, serta menguasai daerah pedalaman Tamiang, Balek Bimba, Samer Langga, Simpang Buah Telang, Perlak, dan Takus. Ia wafat dan dimakamkan di daerah yang bernama Samudra, di atas makamnya ada batu nisan berciri Islam yang menjadi petunjuk bahwa Samudra Pasai adalah kerajaan Islam pertama di Indonesia.</p>
+            <button onclick="toggleContent('malikussaleh')" class="button-hover mt-2">Lihat Biografi</button>
+            <div id="malikussaleh" class="toggle-section mt-2">
+              <p>Sultan Malikussaleh, yang awalnya bernama Merah Silu, adalah pendiri sekaligus raja pertama Kerajaan Samudera Pasai, kerajaan Islam pertama di Nusantara. Ia hidup pada abad ke-13 M dan berasal dari kalangan bangsawan lokal. Menurut Hikayat Raja-raja Pasai, Merah Silu dikenal sebagai pemimpin yang tangguh, cerdas, dan berwibawa. Perjalanan spiritualnya dimulai ketika ia bertemu dengan seorang ulama dari Timur Tengah yang bernama Syekh Ismail. Dari pertemuan itu, ia memeluk agama Islam dan mengganti namanya menjadi Sultan Malikussaleh, yang berarti "raja yang saleh". <br>
+                Sekitar tahun 1267 M, ia mendirikan Kerajaan Samudera Pasai di pesisir utara Aceh, tepatnya di wilayah yang kini dikenal sebagai Lhokseumawe. Letak kerajaan yang strategis di jalur perdagangan internasional membuatnya berkembang pesat sebagai pusat niaga dan penyebaran agama Islam di Asia Tenggara. Di bawah kepemimpinan Sultan Malikussaleh, Samudera Pasai tumbuh menjadi kerajaan Islam yang kuat, berpengaruh, dan dihormati. Ia mendorong pengembangan pendidikan Islam, penerapan hukum Islam, serta membangun hubungan dengan para pedagang dan ulama dari Timur Tengah, India, dan Tiongkok. <br>
+                Sultan Malikussaleh wafat pada akhir abad ke-13 dan dimakamkan di Geudong, Lhokseumawe. Makamnya masih ada hingga kini dan menjadi salah satu peninggalan sejarah penting yang menandai awal mula peradaban Islam di Indonesia. Batu nisan makamnya berhiaskan ukiran huruf Arab dengan kaligrafi yang indah, mencerminkan kuatnya pengaruh budaya Islam di masa pemerintahannya.
+                
+                </p>
+              <button onclick="toggleContent('malikussaleh')" class="button-close mt-2">Tutup</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mb-4">
+        <div class="flex flex-col md:flex-row items-center gap-4">
+          <img src="assets/images/sultan-malikultahir.jpg" alt="Sultan Malik Al-Tahir" class="w-32 h-32 object-cover rounded shadow img-hover-scale">
+          <div>
+            <p><strong>Sultan Malik Al-Tahir</strong> merupakan pengganti Malikul Saleh, putra Malikul Saleh. Pada masa pemerintahannya singgah musafir dari Maroko yaitu Ibnu Batutah. Sultan Malikul Tahir digantikan oleh Sultan Mahmud Malik az-Zahir yang pada masanya mengalami kemunduran. Adik Sultan Malik az-Zahir (Mansur Malik az-Zahir) memisahkan diri sehingga kerajaan terpecah pada tahun 1521, lalu kerajaan Samudera Pasai dikuasai Portugis selama tiga tahun, pada tahun 1524 dikuasai oleh Ali Mughayat Syah dari Aceh dan selanjutnya berada di bawah kekuasaan Aceh.</p>
+            <button onclick="toggleContent('malikultahir')" class="button-hover mt-2">Lihat Biografi</button>
+            <div id="malikultahir" class="toggle-section mt-2">
+              <p>Sultan Malikul Tahir adalah salah satu raja penting dari Kerajaan Samudera Pasai, yang memerintah setelah wafatnya ayahnya, Sultan Malikussaleh. Ia dikenal sebagai raja kedua dalam silsilah kerajaan tersebut dan melanjutkan peran penting dalam memperkuat posisi Samudera Pasai sebagai kerajaan Islam pertama dan pusat perdagangan maritim di Asia Tenggara pada abad ke-13 hingga ke-14 M. <br> 
+                Sultan Malikul Tahir mewarisi tahta dari ayahnya dengan penuh tanggung jawab dan terus melanjutkan penyebaran agama Islam di wilayah Nusantara. Ia dikenal sebagai pemimpin yang bijaksana dan religius, serta menjaga hubungan diplomatik dengan dunia Islam di luar negeri, khususnya dengan para pedagang dan ulama dari Timur Tengah. Di masa pemerintahannya, aktivitas perdagangan semakin berkembang karena letak strategis Samudera Pasai di jalur pelayaran internasional antara India dan Tiongkok. Hal ini menjadikan Samudera Pasai sebagai pelabuhan penting yang ramai disinggahi kapal-kapal asing. <br>
+                Selain memperkuat aspek ekonomi, Sultan Malikul Tahir juga memberikan perhatian pada pendidikan dan hukum Islam. Ia mendorong penerapan syariat Islam dalam kehidupan masyarakat dan menjadikan kerajaan sebagai pusat pembelajaran Islam. Keberadaannya turut memperkokoh identitas Samudera Pasai sebagai kerajaan Islam yang berpengaruh di kawasan Asia Tenggara. <br>
+                Walaupun tidak banyak catatan terperinci tentang masa akhir pemerintahannya, peran Sultan Malikul Tahir sangat signifikan dalam meneruskan fondasi yang dibangun oleh ayahnya. Ia memastikan bahwa ajaran Islam terus berkembang dan berakar kuat di masyarakat. Namanya tercatat dalam sejarah sebagai sosok pemimpin penerus yang melanjutkan kejayaan awal Samudera Pasai.</p>
+              <button onclick="toggleContent('malikultahir')" class="button-close mt-2">Tutup</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-6 p-4 rounded-lg shadow bg-white hover:shadow-lg transition">
+      <h3 class="text-xl font-semibold mb-2">Ekonomi</h3>
+      <p>Kerajaan Samudera terletak di jalur pelayaran dan perdagangan dunia (Selat Malaka). Kerajaan ini berada di sektor pelayaran, pertanian (lada), dan perdagangan (sutra, kapur, dan emas). Pada masa pemerintahan Sultan Malikul Saleh, kerajaan berkembang menjadi bandar besar dan penting bagi perdagangan internasional. Guna mengamankan diri dari Kerajaan Siam yang meliputi Semenanjung Malaya, mereka mengadakan hubungan langsung dengan Cina. Setelah dikuasai oleh Kerajaan Malaka, pusat perdagangan pindah ke Bandar Malaka.</p>
+    </section>
+
+    <section class="mb-6 p-4 rounded-lg shadow bg-white hover:shadow-lg transition">
+      <h3 class="text-xl font-semibold mb-2">Sosial</h3>
+      <p>Kerajaan ini memiliki masyarakat multikultural, terdiri dari pedagang Arab, Persia, India, dan lokal. Penyebaran Islam membentuk struktur sosial berbasis syariat dan adat lokal. Kerajaan Samudera Pasai diatur berdasarkan ajaran/hukum Islam. Terdapat banyak persamaan dengan kehidupan sosial Arab karena pengaruh perdagangan Islam dari Persia, Arab, India yang sejak abad ke-7 dan 8 singgah di Samudera Pasai. Kerajaan Samudera Pasai mendapat julukan Serambi Mekah karena kehidupan sosialnya memiliki banyak persamaan dengan Arab.</p>
+    </section>
+
+    <section class="mb-6 p-4 rounded-lg shadow bg-white hover:shadow-lg transition">
+      <h3 class="text-xl font-semibold mb-2">Budaya dan Peninggalan</h3>
+      <p>Peninggalan penting termasuk makam Sultan Malikussaleh, koin dirham emas, Lonceng Cakra Donya, makam Ratu Nahrasiyah, Hikayat Raja-raja Pasai, dan tradisi Peutron Aneuk. Semua mencerminkan kemajuan budaya dan ilmu keislaman.</p>
+    </section>
+
+    <section class="mb-6 p-4 rounded-lg shadow bg-white hover:shadow-lg transition">
+      <h3 class="text-xl font-semibold mb-2">Kemunduran</h3>
+      <p>Keruntuhan Samudera Pasai dipengaruhi oleh faktor internal dan eksternal. Faktor internal antara lain tidak adanya penerus/pemimpin yang cakap, konflik di istana, dan munculnya pemberontakan. Faktor eksternal antara lain serangan Kerajaan Majapahit, munculnya kesultanan Malaka, dan serangan Portugis terhadap kawasan Malaka. </p>
+    </section>
+  </main>
+
+  <footer class="bg-green-100 text-center p-4 text-sm mt-10">
+    <p>&copy; 2025 Ensiklopedia Samudera Pasai</p>
+    <p>Sumber: Buku Paket Sejarah Kelas XI</p>
+  </footer>
+
+  <button onclick="scrollToTop()" class="fixed bottom-6 right-6 bg-green-600 text-white px-4 py-2 rounded-full shadow-lg hover:bg-green-700 hidden" id="toTop">⬆</button>
+
+  <script>
+    function toggleContent(id) {
+      const section = document.getElementById(id);
+      section.classList.toggle('show');
+    }
+
+    const toTopBtn = document.getElementById("toTop");
+    window.onscroll = function () {
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        toTopBtn.classList.remove("hidden");
+      } else {
+        toTopBtn.classList.add("hidden");
+      }
+    };
+
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  </script>
+
+<script>
+  const hamburgerBtn = document.getElementById("hamburgerBtn");
+  const mobileMenu = document.getElementById("mobileMenu");
+
+  hamburgerBtn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Galeri - Samudera Pasai</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="ensiklopedia.css">
+  </head>
+<body class="bg-lightcream text-green-900 font-serif fade-in">
+
+  <nav class="bg-green-100 shadow-md p-4 sticky top-0 z-50">
+    <div class="flex justify-between items-center max-w-screen-xl mx-auto">
+      <h1 class="text-xl font-bold">Ensiklopedia Samudera Pasai</h1>
+      <button id="hamburgerBtn" class="md:hidden focus:outline-none" aria-label="Toggle Menu">
+        <svg class="w-6 h-6 text-green-900" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+      <ul class="hidden md:flex space-x-6 text-sm md:text-base font-semibold" id="navMenu">
+        <li><a href="index.html" class="hover:text-green-600">Beranda</a></li>
+        <li><a href="sejarah.html" class="hover:text-green-600">Sejarah</a></li>
+        <li><a href="galeri.html" class="hover:text-green-600">Galeri</a></li>
+        <li><a href="tentang.html" class="hover:text-green-600">Tentang</a></li>
+      </ul>
+    </div>
+    <ul class="md:hidden hidden flex-col space-y-2 mt-4 px-2 text-sm font-semibold" id="mobileMenu">
+      <li><a href="index.html" class="block py-2 px-4 hover:bg-green-200 rounded">Beranda</a></li>
+      <li><a href="sejarah.html" class="block py-2 px-4 hover:bg-green-200 rounded">Sejarah</a></li>
+      <li><a href="galeri.html" class="block py-2 px-4 hover:bg-green-200 rounded">Galeri</a></li>
+      <li><a href="tentang.html" class="block py-2 px-4 hover:bg-green-200 rounded">Tentang</a></li>
+    </ul>
+  </nav>
+  
+
+<main class="p-6 max-w-6xl mx-auto">
+  <h2 class="text-3xl font-bold mb-6">Galeri Peninggalan</h2>
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    
+    <div class="bg-white rounded-lg shadow p-4 card-hover">
+      <img src="assets/images/makam-malikussaleh.jpg" alt="Makam Sultan Malikussaleh" class="w-full h-48 object-cover rounded-md mb-4">
+      <h3 class="text-lg font-bold mb-1">Makam Sultan Malikussaleh</h3>
+      <p class="mb-3">Situs tua yang menunjukkan bahwa Kerajaan Samudera Pasai adalah kerajaan Islam pertama di Indonesia.</p>
+      <a href="detail-makam.html" class="inline-block bg-green-700 text-white px-3 py-1 rounded button-hover">Baca Selengkapnya</a>
+    </div>
+
+    <div class="bg-white rounded-lg shadow p-4 card-hover">
+      <img src="assets/images/emas-dirham.jpg" alt="Koin Dirham Emas" class="w-full h-48 object-cover rounded-md mb-4">
+      <h3 class="text-lg font-bold mb-1">Koin Dirham Emas</h3>
+      <p class="mb-3">Mata uang dari Samudera Pasai yang menjadi bukti kejayaan ekonomi dan perdagangan.</p>
+      <a href="detail-dirham.html" class="inline-block bg-green-700 text-white px-3 py-1 rounded button-hover">Baca Selengkapnya</a>
+    </div>
+
+    <div class="bg-white rounded-lg shadow p-4 card-hover">
+      <img src="assets/images/locengcakradonya.jpg" alt="Lonceng Cakra Donya" class="w-full h-48 object-cover rounded-md mb-4">
+      <h3 class="text-lg font-bold mb-1">Lonceng Cakra Donya</h3>
+      <p class="mb-3"> Peninggalan bersejarah dari abad ke-15 yang merupakan simbol hubungan diplomatik antara Kesultanan Aceh dan Tiongkok.</p>
+      <a href="detail-lonceng.html" class="inline-block bg-green-700 text-white px-3 py-1 rounded button-hover">Baca Selengkapnya</a>
+    </div>
+
+    <div class="bg-white rounded-lg shadow p-4 card-hover">
+      <img src="assets/images/makamratunahrasiyah.jpg" alt="Makam Ratu Nahrasiyah" class="w-full h-48 object-cover rounded-md mb-4">
+      <h3 class="text-lg font-bold mb-1">Makam Ratu Nahrasiyah</h3>
+      <p class="mb-3">Peninggalan penting yang mencerminkan peran pemimpin perempuan dalam sejarah Islam awal di Nusantara.
+      </p>
+      <a href="detail-ratu.html" class="inline-block bg-green-700 text-white px-3 py-1 rounded button-hover">Baca Selengkapnya</a>
+    </div>
+
+    <div class="bg-white rounded-lg shadow p-4 card-hover">
+      <img src="assets/images/hikayatrajarajapasai.jpg" alt="Hikayat Raja-raja Pasai" class="w-full h-48 object-cover rounded-md mb-4">
+      <h3 class="text-lg font-bold mb-1">Hikayat Raja-raja Pasai</h3>
+      <p class="mb-3">Karya sastra sejarah yang menceritakan asal-usul, keislaman, dan kejayaan Kerajaan Samudera Pasai.</p>
+      <a href="detail-hikayat.html" class="inline-block bg-green-700 text-white px-3 py-1 rounded button-hover">Baca Selengkapnya</a>
+    </div>
+
+    <div class="bg-white rounded-lg shadow p-4 card-hover">
+      <img src="assets/images/tradisipeutronaneuk.jpg" alt="Tradisi Peutron Aneuk" class="w-full h-48 object-cover rounded-md mb-4">
+      <h3 class="text-lg font-bold mb-1">Tradisi Peutron Aneuk</h3>
+      <p class="mb-3">Tradisi adat Aceh untuk menyambut kelahiran anak, sebagai ungkapan syukur dan doa keselamatan bagi sang bayi dan ibu.</p>
+      <a href="detail-tradisi.html" class="inline-block bg-green-700 text-white px-3 py-1 rounded button-hover">Baca Selengkapnya</a>
+    </div>
+
+  </div>
+</main>
+
+<footer class="bg-green-100 text-center p-4 text-sm mt-10">
+  <p>&copy; 2025 Ensiklopedia Samudera Pasai</p>
+  <p>Sumber: Buku Paket Sejarah Kelas XI</p>
+</footer>
+
+<button onclick="scrollToTop()" class="fixed bottom-6 right-6 bg-green-600 text-white px-4 py-2 rounded-full shadow-lg hover:bg-green-700 hidden" id="toTop">⬆</button>
+
+<script>
+  function toggleContent(id) {
+    const section = document.getElementById(id);
+    section.classList.toggle('show');
+  }
+
+  const toTopBtn = document.getElementById("toTop");
+  window.onscroll = function () {
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+      toTopBtn.classList.remove("hidden");
+    } else {
+      toTopBtn.classList.add("hidden");
+    }
+  };
+
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+</script>
+
+<script>
+  const hamburgerBtn = document.getElementById("hamburgerBtn");
+  const mobileMenu = document.getElementById("mobileMenu");
+
+  hamburgerBtn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+  });
+</script>
+
+
+</body>
+</html>

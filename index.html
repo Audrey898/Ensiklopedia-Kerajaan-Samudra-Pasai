@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Beranda - Ensiklopedia Samudera Pasai</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="ensiklopedia.css" />
+</head>
+<body class="bg-cream text-green-900 font-serif fade-in">
+
+  <nav class="bg-green-100 shadow-md p-4 sticky top-0 z-50">
+    <div class="flex justify-between items-center max-w-screen-xl mx-auto">
+      <h1 class="text-xl font-bold">Ensiklopedia Samudera Pasai</h1>
+      
+      <button id="hamburgerBtn" class="md:hidden focus:outline-none" aria-label="Toggle Menu">
+        <svg class="w-6 h-6 text-green-900" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+  
+      <ul class="hidden md:flex space-x-6 text-sm md:text-base font-semibold" id="navMenu">
+        <li><a href="index.html" class="hover:text-green-600">Beranda</a></li>
+        <li><a href="sejarah.html" class="hover:text-green-600">Sejarah</a></li>
+        <li><a href="galeri.html" class="hover:text-green-600">Galeri</a></li>
+        <li><a href="tentang.html" class="hover:text-green-600">Tentang</a></li>
+      </ul>
+    </div>
+  
+      <ul class="md:hidden hidden flex-col space-y-2 mt-4 px-2 text-sm font-semibold" id="mobileMenu">
+        <li><a href="index.html" class="block py-2 px-4 hover:bg-green-200 rounded">Beranda</a></li>
+        <li><a href="sejarah.html" class="block py-2 px-4 hover:bg-green-200 rounded">Sejarah</a></li>
+        <li><a href="galeri.html" class="block py-2 px-4 hover:bg-green-200 rounded">Galeri</a></li>
+        <li><a href="tentang.html" class="block py-2 px-4 hover:bg-green-200 rounded">Tentang</a></li>
+      </ul>
+  </nav>
+  
+
+  <section class="text-center py-16 md:py-20 bg-green-50 px-4 max-w-screen-xl mx-auto">
+    <h2 class="text-3xl md:text-4xl font-bold mb-4">Selamat Datang di Ensiklopedia Digital</h2>
+    <p class="max-w-2xl mx-auto text-base md:text-lg leading-relaxed">
+      Website ini dibuat untuk menyajikan informasi sejarah tentang Kerajaan Samudera Pasai, salah satu kerajaan Islam pertama di Indonesia, lengkap dengan artefak, raja-raja penting, dan peninggalan budaya lainnya.
+    </p>
+    <a href="sejarah.html" class="mt-6 inline-block bg-green-600 text-white px-6 py-3 rounded-full hover:bg-green-700 transition duration-300">
+      Jelajahi Sekarang
+    </a>
+  </section>
+
+  <section class="grid grid-cols-1 md:grid-cols-3 gap-6 p-6 md:p-10 max-w-screen-xl mx-auto bg-white">
+    <div class="shadow hover:shadow-xl transition rounded overflow-hidden">
+      <img src="assets/images/kerajaan-samudera.jpg" alt="Ilustrasi Kerajaan Samudera Pasai" class="w-full h-48 object-cover md:h-56">
+      <p class="p-4 text-sm md:text-base">Ilustrasi pelabuhan dan pusat perdagangan Kerajaan Samudera Pasai</p>
+    </div>
+    <div class="shadow hover:shadow-xl transition rounded overflow-hidden">
+      <img src="assets/images/sultan-malikussaleh.jpg" alt="Sultan Malikussaleh" class="w-full h-48 object-cover md:h-56">
+      <p class="p-4 text-sm md:text-base">Sultan Malikussaleh, pendiri dan tokoh penting dalam Kerajaan Samudera Pasai</p>
+    </div>
+    <div class="shadow hover:shadow-xl transition rounded overflow-hidden">
+      <img src="assets/images/emas-dirham.jpg" alt="Koin Dirham Emas" class="w-full h-48 object-cover md:h-56">
+      <p class="p-4 text-sm md:text-base">Koin Dirham emas sebagai salah satu peninggalan ekonomi penting</p>
+    </div>
+  </section>
+
+  <footer class="bg-green-100 text-center p-4 text-sm mt-10">
+    <p>&copy; 2025 Ensiklopedia Samudera Pasai</p>
+    <p>Sumber gambar: Kompas.com, Merdeka.com, dan detik.com</p>
+  </footer>
+
+<button onclick="scrollToTop()" class="fixed bottom-6 right-6 bg-green-600 text-white px-4 py-2 rounded-full shadow-lg hover:bg-green-700 hidden" id="toTop">⬆</button>
+
+<script>
+  function toggleContent(id) {
+    const section = document.getElementById(id);
+    section.classList.toggle('show');
+  }
+
+  const toTopBtn = document.getElementById("toTop");
+  window.onscroll = function () {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+      toTopBtn.classList.remove("hidden");
+    } else {
+      toTopBtn.classList.add("hidden");
+    }
+  };
+
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+</script>
+
+<script>
+  const hamburgerBtn = document.getElementById("hamburgerBtn");
+  const mobileMenu = document.getElementById("mobileMenu");
+
+  hamburgerBtn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+  });
+</script>
+
+</body>
+</html>

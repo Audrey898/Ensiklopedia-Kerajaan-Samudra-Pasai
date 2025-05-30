@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Makam Sultan Malikussaleh - Ensiklopedia Samudera Pasai</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <style>
+    .bg-lightcream { background-color: #fffdf4; }
+    .fade-in { animation: fadeIn 1s ease-in; }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body class="bg-lightcream text-green-900 font-serif fade-in">
+
+  <nav class="bg-green-100 shadow-md p-4 sticky top-0 z-50">
+    <div class="flex justify-between items-center max-w-screen-xl mx-auto">
+      <h1 class="text-xl font-bold">Ensiklopedia Samudera Pasai</h1>
+      <button id="hamburgerBtn" class="md:hidden focus:outline-none" aria-label="Toggle Menu">
+        <svg class="w-6 h-6 text-green-900" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+      <ul class="hidden md:flex space-x-6 text-sm md:text-base font-semibold" id="navMenu">
+        <li><a href="beranda.html" class="hover:text-green-600">Beranda</a></li>
+        <li><a href="index.html" class="hover:text-green-600">Sejarah</a></li>
+        <li><a href="galeri.html" class="hover:text-green-600">Galeri</a></li>
+        <li><a href="tentang.html" class="hover:text-green-600">Tentang</a></li>
+      </ul>
+    </div>
+    <ul class="md:hidden hidden flex-col space-y-2 mt-4 px-2 text-sm font-semibold" id="mobileMenu">
+      <li><a href="index.html" class="block py-2 px-4 hover:bg-green-200 rounded">Beranda</a></li>
+      <li><a href="sejarah.html" class="block py-2 px-4 hover:bg-green-200 rounded">Sejarah</a></li>
+      <li><a href="galeri.html" class="block py-2 px-4 hover:bg-green-200 rounded">Galeri</a></li>
+      <li><a href="tentang.html" class="block py-2 px-4 hover:bg-green-200 rounded">Tentang</a></li>
+    </ul>
+  </nav>  
+
+  <main class="p-6 max-w-4xl mx-auto">
+    <h2 class="text-3xl font-bold mb-4">Makam Sultan Malikussaleh</h2>
+    <img src="assets/images/makam-malikussaleh.jpg" alt="Makam Sultan Malikussaleh" class="w-full rounded shadow mb-6"/>
+
+    <p class="mb-4"><em>Makam Sultan Malikussaleh</em> 
+    merupakan salah satu peninggalan bersejarah penting dari Kerajaan Samudera Pasai, kerajaan Islam pertama di Nusantara. Terletak di Kecamatan Samudera, Kabupaten Aceh Utara, makam ini dipercaya sebagai tempat peristirahatan terakhir Sultan Malikussaleh, raja pertama yang membawa pengaruh Islam ke kawasan tersebut pada abad ke-13.
+    Makam ini menjadi bukti nyata berkembangnya agama Islam di wilayah Asia Tenggara sejak masa awal. Di sekitar makam, terdapat nisan batu dengan ukiran kaligrafi Arab yang halus dan penuh makna. Kaligrafi tersebut mencantumkan nama raja, tanggal wafat berdasarkan kalender Hijriah, serta doa-doa Islam, menunjukkan kuatnya pengaruh budaya Timur Tengah dan nilai-nilai keislaman dalam sistem pemerintahan Samudera Pasai.
+    Selain nilai sejarah dan religi, makam ini juga menjadi tujuan ziarah dan wisata budaya. Banyak pengunjung datang tidak hanya untuk mengenang jasa Sultan Malikussaleh, tetapi juga untuk menyaksikan langsung jejak awal peradaban Islam di Indonesia. Keberadaan makam ini memperkuat identitas Aceh sebagai salah satu pusat peradaban Islam tertua di Nusantara.
+    </p>
+    <a href="galeri.html" class="inline-block mt-4 px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition">← Kembali ke Galeri</a>
+  </main>
+
+  <footer class="bg-green-100 text-center p-4 text-sm mt-10">
+    <p>&copy; 2025 Ensiklopedia Samudera Pasai</p>
+  </footer>
+
+  <script>
+    const hamburgerBtn = document.getElementById("hamburgerBtn");
+    const mobileMenu = document.getElementById("mobileMenu");
+  
+    hamburgerBtn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+  </script>
+  
+</body>
+</html>

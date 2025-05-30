@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hikayat Raja-raja Pasai - Kerajaan Samudera Pasai</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <style>
+    .bg-lightcream { background-color: #fffdf4; }
+    .fade-in { animation: fadeIn 1s ease-in; }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body class="bg-lightcream text-green-900 font-serif fade-in">
+
+    <nav class="bg-green-100 shadow-md p-4 sticky top-0 z-50">
+        <div class="flex justify-between items-center max-w-screen-xl mx-auto">
+          <h1 class="text-xl font-bold">Ensiklopedia Samudera Pasai</h1>
+          <button id="hamburgerBtn" class="md:hidden focus:outline-none" aria-label="Toggle Menu">
+            <svg class="w-6 h-6 text-green-900" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
+          </button>
+          <ul class="hidden md:flex space-x-6 text-sm md:text-base font-semibold" id="navMenu">
+            <li><a href="index.html" class="hover:text-green-600">Beranda</a></li>
+            <li><a href="sejarah.html" class="hover:text-green-600">Sejarah</a></li>
+            <li><a href="galeri.html" class="hover:text-green-600">Galeri</a></li>
+            <li><a href="tentang.html" class="hover:text-green-600">Tentang</a></li>
+          </ul>
+        </div>
+        <ul class="md:hidden hidden flex-col space-y-2 mt-4 px-2 text-sm font-semibold" id="mobileMenu">
+          <li><a href="index.html" class="block py-2 px-4 hover:bg-green-200 rounded">Beranda</a></li>
+          <li><a href="sejarah.html" class="block py-2 px-4 hover:bg-green-200 rounded">Sejarah</a></li>
+          <li><a href="galeri.html" class="block py-2 px-4 hover:bg-green-200 rounded">Galeri</a></li>
+          <li><a href="tentang.html" class="block py-2 px-4 hover:bg-green-200 rounded">Tentang</a></li>
+        </ul>
+      </nav>
+      
+  <main class="p-6 max-w-4xl mx-auto">
+    <h2 class="text-3xl font-bold mb-4">Hikayat Raja-raja Pasai</h2>
+    <img src="assets/images/hikayatrajarajapasai.jpg" alt="Hikayat Raja-raja Pasai" class="w-full rounded shadow mb-6"/>
+
+    <p class="mb-4"><em>Hikayat Raja-raja Pasai</em>
+    adalah salah satu karya sastra Melayu klasik yang sangat berharga dalam memahami sejarah awal Islam di Nusantara. Naskah ini memuat kisah-kisah raja-raja yang memerintah Kerajaan Samudera Pasai, lengkap dengan asal-usul mereka, proses masuknya Islam, serta hubungan mereka dengan dunia Islam internasional. Hikayat ini diawali dengan cerita tentang kedatangan seorang raja bernama Merah Silu, yang kemudian memeluk Islam dan berganti nama menjadi Sultan Malikussaleh. Ia menjadi raja pertama Kerajaan Samudera Pasai dan dikenal karena kebijaksanaannya serta perannya dalam menyebarkan agama Islam. Kisah ini disampaikan dalam bentuk narasi epik yang memadukan unsur sejarah, legenda, dan ajaran moral Islam.
+    Selain berfungsi sebagai catatan sejarah, Hikayat Raja-Raja Pasai juga menggambarkan nilai-nilai sosial dan keagamaan masyarakat Melayu pada masa itu. Melalui hikayat ini, kita dapat melihat bagaimana Islam mulai memengaruhi sistem pemerintahan, kebudayaan, serta cara hidup masyarakat Pasai.
+    Naskah ini ditulis dalam aksara Jawi (Arab-Melayu) dan ditemukan dalam berbagai manuskrip kuno yang kini disimpan di perpustakaan-perpustakaan besar, seperti di Malaysia dan Inggris. Hikayat ini telah menjadi rujukan utama bagi para sejarawan, sastrawan, dan akademisi yang ingin menggali lebih dalam tentang Islamisasi dan tradisi kerajaan di Asia Tenggara.
+    Hikayat Raja-Raja Pasai bukan sekadar cerita lama, melainkan warisan budaya yang mencerminkan identitas, kebijaksanaan, dan spiritualitas masyarakat Melayu-Islam pada masa awal.
+    </p>
+    <a href="galeri.html" class="inline-block mt-4 px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition">← Kembali ke Galeri</a>
+  </main>
+
+  <footer class="bg-green-100 text-center p-4 text-sm mt-10">
+    <p>&copy; 2025 Ensiklopedia Samudera Pasai</p>
+  </footer>
+
+  <script>
+    const hamburgerBtn = document.getElementById("hamburgerBtn");
+    const mobileMenu = document.getElementById("mobileMenu");
+  
+    hamburgerBtn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+  </script>
+  
+</body>
+</html>

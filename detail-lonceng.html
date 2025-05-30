@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lonceng Cakra Donya - Kerajaan Samudera Pasai</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <style>
+    .bg-lightcream { background-color: #fffdf4; }
+    .fade-in { animation: fadeIn 1s ease-in; }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body class="bg-lightcream text-green-900 font-serif fade-in">
+
+    <nav class="bg-green-100 shadow-md p-4 sticky top-0 z-50">
+        <div class="flex justify-between items-center max-w-screen-xl mx-auto">
+          <h1 class="text-xl font-bold">Ensiklopedia Samudera Pasai</h1>
+          <button id="hamburgerBtn" class="md:hidden focus:outline-none" aria-label="Toggle Menu">
+            <svg class="w-6 h-6 text-green-900" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
+          </button>
+          <ul class="hidden md:flex space-x-6 text-sm md:text-base font-semibold" id="navMenu">
+            <li><a href="index.html" class="hover:text-green-600">Beranda</a></li>
+            <li><a href="sejarah.html" class="hover:text-green-600">Sejarah</a></li>
+            <li><a href="galeri.html" class="hover:text-green-600">Galeri</a></li>
+            <li><a href="tentang.html" class="hover:text-green-600">Tentang</a></li>
+          </ul>
+        </div>
+        <ul class="md:hidden hidden flex-col space-y-2 mt-4 px-2 text-sm font-semibold" id="mobileMenu">
+          <li><a href="index.html" class="block py-2 px-4 hover:bg-green-200 rounded">Beranda</a></li>
+          <li><a href="sejarah.html" class="block py-2 px-4 hover:bg-green-200 rounded">Sejarah</a></li>
+          <li><a href="galeri.html" class="block py-2 px-4 hover:bg-green-200 rounded">Galeri</a></li>
+          <li><a href="tentang.html" class="block py-2 px-4 hover:bg-green-200 rounded">Tentang</a></li>
+        </ul>
+      </nav>      
+
+  <main class="p-6 max-w-4xl mx-auto">
+    <h2 class="text-3xl font-bold mb-4">Lonceng Cakra Donya</h2>
+    <img src="assets/images/locengcakradonya.jpg" alt="Lonceng Cakra Donya" class="w-full rounded shadow mb-6"/>
+
+    <p class="mb-4"> <em>Lonceng Cakra Donya</em> 
+    adalah peninggalan bersejarah yang menandai hubungan diplomatik antara Kesultanan Aceh dan Tiongkok pada abad ke-15. Lonceng ini dipercaya merupakan hadiah dari Laksamana Cheng Ho, seorang utusan dari Kaisar Yongle Dinasti Ming, yang melakukan pelayaran ke Nusantara dalam misi perdamaian dan kerja sama antarbangsa.
+    Terbuat dari perunggu dengan tinggi sekitar 125 cm dan berat lebih dari satu ton, lonceng ini dihiasi ukiran huruf Tionghoa dan simbol naga—ikon khas budaya Tiongkok. Nama "Cakra Donya" sendiri berasal dari kata Sanskerta dan Arab, yang berarti "roda dunia", merefleksikan hubungan antarperadaban di kawasan Asia saat itu.
+    Pemberian lonceng ini oleh Cheng Ho menjadi bukti penting bahwa Kesultanan Aceh telah menjalin hubungan diplomatik dan perdagangan internasional sejak masa awal. Kehadiran Cheng Ho tidak hanya membawa pengaruh Tiongkok, tetapi juga memperkuat jalur maritim antara Asia Timur dan Asia Tenggara, termasuk penguatan Islam sebagai agama yang dianut banyak penguasa saat itu.
+    Kini, Lonceng Cakra Donya disimpan dan dipamerkan di Museum Aceh, Banda Aceh. Artefak ini menjadi simbol toleransi, diplomasi, dan kemajuan peradaban maritim Nusantara. Dengan bentuknya yang unik dan nilai historisnya yang tinggi, lonceng ini tetap menjadi salah satu bukti kejayaan dan keterbukaan budaya Kesultanan Aceh pada masanya.
+    </p>
+    <a href="galeri.html" class="inline-block mt-4 px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition">← Kembali ke Galeri</a>
+  </main>
+
+  <footer class="bg-green-100 text-center p-4 text-sm mt-10">
+    <p>&copy; 2025 Ensiklopedia Samudera Pasai</p>
+  </footer>
+
+  <script>
+    const hamburgerBtn = document.getElementById("hamburgerBtn");
+    const mobileMenu = document.getElementById("mobileMenu");
+  
+    hamburgerBtn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+  </script>
+  
+</body>
+</html>

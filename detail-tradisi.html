@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tradisi Peutron Aneuk - Kerajaan Samudera Pasai</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <style>
+    .bg-lightcream { background-color: #fffdf4; }
+    .fade-in { animation: fadeIn 1s ease-in; }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body class="bg-lightcream text-green-900 font-serif fade-in">
+
+    <nav class="bg-green-100 shadow-md p-4 sticky top-0 z-50">
+        <div class="flex justify-between items-center max-w-screen-xl mx-auto">
+          <h1 class="text-xl font-bold">Ensiklopedia Samudera Pasai</h1>
+          <button id="hamburgerBtn" class="md:hidden focus:outline-none" aria-label="Toggle Menu">
+            <svg class="w-6 h-6 text-green-900" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
+          </button>
+          <ul class="hidden md:flex space-x-6 text-sm md:text-base font-semibold" id="navMenu">
+            <li><a href="index.html" class="hover:text-green-600">Beranda</a></li>
+            <li><a href="sejarah.html" class="hover:text-green-600">Sejarah</a></li>
+            <li><a href="galeri.html" class="hover:text-green-600">Galeri</a></li>
+            <li><a href="tentang.html" class="hover:text-green-600">Tentang</a></li>
+          </ul>
+        </div>
+        <ul class="md:hidden hidden flex-col space-y-2 mt-4 px-2 text-sm font-semibold" id="mobileMenu">
+          <li><a href="index.html" class="block py-2 px-4 hover:bg-green-200 rounded">Beranda</a></li>
+          <li><a href="sejarah.html" class="block py-2 px-4 hover:bg-green-200 rounded">Sejarah</a></li>
+          <li><a href="galeri.html" class="block py-2 px-4 hover:bg-green-200 rounded">Galeri</a></li>
+          <li><a href="tentang.html" class="block py-2 px-4 hover:bg-green-200 rounded">Tentang</a></li>
+        </ul>
+      </nav>
+      
+  <main class="p-6 max-w-4xl mx-auto">
+    <h2 class="text-3xl font-bold mb-4">Tradisi Peutron Aneuk</h2>
+    <img src="assets/images/tradisipeutronaneuk.jpg" alt="Tradisi Peutron Aneuk" class="w-full rounded shadow mb-6"/>
+
+    <p class="mb-4"> <em>Tradisi Peutron Aneuk</em>
+    adalah salah satu tradisi adat masyarakat Aceh yang dilakukan untuk menyambut kelahiran seorang anak. Tradisi ini memiliki makna spiritual dan sosial yang mendalam sebagai bentuk rasa syukur kepada Allah SWT atas lahirnya seorang bayi, sekaligus sebagai permohonan doa agar sang anak tumbuh sehat, selamat, dan mendapat berkah dalam hidupnya.
+    Secara harfiah, “peutron aneuk” berarti “kelahiran anak”. Tradisi ini biasanya dilaksanakan beberapa hari setelah kelahiran, tergantung pada adat masing-masing daerah di Aceh. Acara ini melibatkan keluarga besar dan tetangga sekitar, yang berkumpul untuk membaca doa bersama, melakukan selamatan, serta memberikan nama kepada sang bayi. Dalam beberapa kasus, acara juga disertai dengan pemotongan rambut pertama bayi (aqiqah), serta pemberian makanan tradisional.
+    Selain aspek spiritual, tradisi Peutron Aneuk juga memperkuat hubungan sosial antaranggota masyarakat. Kehadiran tetangga dan kerabat menjadi simbol solidaritas dan dukungan terhadap keluarga yang baru mendapat anak. Tradisi ini mencerminkan nilai-nilai gotong royong, kebersamaan, serta kepedulian dalam kehidupan masyarakat Aceh.
+    Meskipun zaman telah berubah, Peutron Aneuk masih dijaga dan dilestarikan oleh masyarakat, baik di pedesaan maupun perkotaan. Tradisi ini menjadi bagian penting dari warisan budaya Aceh yang memperkaya identitas kultural dan spiritual masyarakatnya, serta menjadi simbol penghormatan terhadap kehidupan baru yang hadir di dunia.
+    </p>
+    <a href="galeri.html" class="inline-block mt-4 px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition">← Kembali ke Galeri</a>
+  </main>
+
+  <footer class="bg-green-100 text-center p-4 text-sm mt-10">
+    <p>&copy; 2025 Ensiklopedia Samudera Pasai</p>
+  </footer>
+
+  <script>
+    const hamburgerBtn = document.getElementById("hamburgerBtn");
+    const mobileMenu = document.getElementById("mobileMenu");
+  
+    hamburgerBtn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+  </script>
+  
+</body>
+</html>
